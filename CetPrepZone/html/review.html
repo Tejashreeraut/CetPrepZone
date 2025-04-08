@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CetPrepZone</title>
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container Styles */
+    .flex {
+      display: flex;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    /* Feedback Card Styles */
+    .bg-white {
+      background-color: white;
+    }
+
+    .p-5 {
+      padding: 1.25rem;
+    }
+
+    .rounded-md {
+      border-radius: 0.375rem;
+    }
+
+    .ring-1 {
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title and Text */
+    .text-xl {
+      font-size: 1.25rem;
+    }
+
+    .md\:text-3xl {
+      font-size: 1.875rem;
+    }
+
+    .font-semibold {
+      font-weight: 600;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-slate-500 {
+      color: #6b7280;
+    }
+
+    .mt-3 {
+      margin-top: 0.75rem;
+    }
+
+    .text-md {
+      font-size: 1rem;
+    }
+
+    .md\:text-xl {
+      font-size: 1.25rem;
+    }
+
+    .text-slate-700 {
+      color: #374151;
+    }
+
+    /* Rating Star Styles */
+    .text-5xl {
+      font-size: 3rem;
+    }
+
+    .text-gray-500 {
+      color: gray;
+    }
+
+    /* Textarea Styles */
+    .review-comment {
+      width: 100%;
+      padding:10px;
+      border: 1px solid #d1d5db;
+      border-radius: 0.375rem;
+      font-size: 1rem;
+      color: #374151;
+      height: 200px;
+
+    }
+
+    .review-comment:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.5);
+    }
+
+    .text-red-600 {
+      color: #dc2626;
+    }
+
+    /* Button Styles */
+    .button {
+      display: inline-block;
+      text-align: center;
+      padding: 0.75rem 1.25rem;
+      background-color: #000;
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 500;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #333;
+    }
+
+    /* Button Sizes */
+    .btn-bg-black {
+      background-color: black;
+    }
+
+    .btn-size-md {
+      font-size: 1.125rem;
+      padding: 0.75rem 1.25rem;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+      .md\:text-3xl {
+        font-size: 2.25rem;
+      }
+
+      .md\:text-xl {
+        font-size: 1.5rem;
+      }
+
+      .review-comment {
+        font-size: 1.125rem;
+      }
+    }
+    /*dark mode*/
+
+    .dark-mode .flex 
+    {
+      background-color: black;
+      color: white;
+      
+
+    }
+    .dark-mode .bg-white
+    {
+      background-color: black;
+      color: white;
+      border:2px solid white;
+      padding-bottom: 19px;
+    }
+    .dark-mode .text-xl
+    {
+      background-color: black;
+      color: white;
+    }
+.dark-mode .horizontalrow
+{
+  background-color: black;
+  color: white;
+}
+form
+{
+  background-color: black;
+  color: white;
+}
+</style>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="./icon/virtual-class.png" alt="icon" class="brand-icon">
+            <h2 class="brand-heading">CetPrepZone</h2>
+        </div>
+        <div class="menu">
+            <a class="menu-item" href="./index.html">Home</a>
+            <a class="menu-item" href="./aboutus.html">About Us</a>
+            <a class="menu-item" href="./courses.html">Courses</a>
+            <div class="dropdown">
+                <a class="dropbtn menu-item" href="#">Mock Test<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./contactpage.html">ContactUs</a>
+                    <a href="./pages/logical.html">Logical Ability</a>
+                    <a href="./pages/verbal.html">Verble Ability</a>
+                </div>
+            </div>
+            <a class="menu-item" href="./contactpage.html">Contact</a>
+            <a class="menu-item" href="./notes.html">Notes</a>
+            <a class="menu-item" href="./review.html">Review</a>
+        </div>
+        <div class="search">
+            <input class="input-search" placeholder="search..." />
+        </div>
+        <div id="themeToggle" class="themeToggle">🌙</div>
+        <div class="hamburger-menu">
+        <img src="../icon/menu.png" alt="menu" id="hamburgerIcon">
+        </div>
+        </div>
+   
+</head>
+<body>
+  <div class="flex justify-center items-center">
+    <div class="bg-white p-5 rounded-md ring-1">
+      <p class="text-xl md:text-3xl font-semibold text-center text-slate-500">
+        Share your experience/feedback
+      </p>
+      <p class="text-center mt-3 text-md text-slate-700 md:text-xl"></p>
+
+      <form class="review-form">
+        <div class="text-5xl text-center mb-3">
+          <div>
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
+          </div>
+        </div>
+
+        <span class="text-red-600"></span>
+        
+        <textarea 
+          id="comment" 
+          name="comment" 
+          placeholder="Write Your Feedback Here..." 
+          class="review-comment w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:border-blue-300" 
+          rows="6" 
+          disabled
+        ></textarea>
+        
+        <span class="text-red-600"></span>
+
+        <div class="flex justify-center items-center">
+          <button type="button" class="button btn-bg-black btn-size-md" style="width: 180px;" id="editReviewButton">
+            <span>Edit Review</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+   <!--footer start--> <hr class="horizontalrow">
+   <div class="footer-container"> 
+    
+     <div class="footer-sub-container">
+         <div class="RTC">
+             <img src="./icon/home-page-icons.png" alt="logo" class="footer-logo">
+             <h3 class="footer-heading">CetPrepZone</h3><br>
+         </div>
+         <P class="footer-sub-heading">Affordable Aptitude Preparation for Everyone. We offer high-quality courses
+             and mock tests in Verbal Ability, Logical Reasoning, and Quantitative Aptitude—trusted by 2000+
+             students.</P>
+         <div class="footer-logo-container">
+             <div class="footer-sub-logo-container">
+                 <a href="https://peerlist.io/ganeshgore">
+                     <img src="./icon/peerlist-logo.webp" alt="logo" class="footer-sub-logo">
+                 </a>
+             </div>
+             <div class="footer-sub-logo-container">
+                 <a href="https://www.linkedin.com/in/mr-ganesh-gore">
+                     <img src="./linkedin.png" alt="logo" class="footer-sub-logo">
+                 </a>
+             </div>
+             <div class="footer-sub-logo-container">
+                 <a href="https://github.com/ganeshgore1811">
+                     <img src="./github.png" alt="logo" class="footer-sub-logo">
+                 </a>
+             </div>
+             <div class="footer-sub-logo-container">
+                 <a href="https://www.youtube.com/">
+                     <img src="./youtube.png" alt="logo" class="footer-sub-logo">
+                 </a>
+             </div>
+             <div class="footer-sub-logo-container">
+                 <a href="https://twitter.com/username">
+                     <img src="./twitter.png" alt="logo" class="footer-sub-logo">
+                 </a>
+             </div>
+             <div class="footer-sub-logo-container">
+                 <a href="https://www.instagram.com/ganeshgore_18">
+                     <img src="./instagram (2).png" alt="logo" class="footer-sub-logo">
+                 </a>
+             </div>
+         </div>
+     </div>
+     <div class="footer-Quick-links">
+         <h3 class="footer-heading">Quick Links</h3>
+         <a href="./index.html" class="footer-courses">Home</a><br><br>
+         <a href="./pages/about.html" class="footer-courses">About Us</a><br><br>
+         <a href="./pages/courses.html" class="footer-courses">Courses</a><br><br>
+         <a href="./pages/contact.html" class="footer-courses">Contact</a><br><br>
+     </div>
+ 
+     <div class="footer-Learn">
+         <h3>Courses</h3>
+         <p class="language">Quantitative Aptitude</p>
+         <p class="language">Logical Ability</p>
+         <p class="language">Verble ability</p>
+         <p class="language">Interview Preparation</p>
+     </div>
+ 
+     <div class="footer-Contact-Us">
+         <h3>Contact Us</h3>
+         <div class="footer-location-container">
+             <img src="./icon/location.svg" alt="location" class="footer-icon">
+             <p class="footer-location">404, Laxmi Heights, Above Lotus Multi-speciality Hospital
+                 Shewalewadi(Hadapsar), Pune - 412307</p>
+         </div>
+ 
+         <div class="footer-location-container">
+             <img src="./apple (2).png" alt="location" class="footer-icon">
+             <p class="footer-location"><a href="tel:+91-9834990446">+91-9834990446</a></p>
+         </div>
+ 
+         <div class="footer-location-container">
+             <img src="./location.png" alt="location" class="footer-icon">
+             <p class="footer-location"><a href="mailto:tejur9618@gmail.com">tejur9618@gmail.com</a></p>
+         </div>
+     </div>
+ </div>
+ <!--footer close-->
+
+
+
+  <script>
+    // JavaScript to handle enabling textarea and star rating interaction
+
+    // Edit Review Button
+    const editReviewButton = document.getElementById('editReviewButton');
+    const commentTextarea = document.getElementById('comment');
+
+    // Enable the textarea when "Edit Review" is clicked
+    editReviewButton.addEventListener('click', () => {
+      if (commentTextarea.disabled) {
+        commentTextarea.disabled = false;
+        commentTextarea.focus();  // Focus on the textarea when it's enabled
+        editReviewButton.innerHTML = '<span>Save Review</span>';
+      } else {
+        commentTextarea.disabled = true;
+        editReviewButton.innerHTML = '<span>Edit Review</span>';
+      }
+    });
+
+    // Handle star rating click
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+      star.addEventListener('click', (e) => {
+        // Get the rating from the clicked star
+        const rating = e.target.getAttribute('data-rating');
+        
+        // Set the stars' color based on the selected rating
+        stars.forEach(star => {
+          const starRating = star.getAttribute('data-rating');
+          if (starRating <= rating) {
+            star.style.color = '#ffcc00'; // Gold color for selected stars
+          } else {
+            star.style.color = 'gray'; // Gray color for unselected stars
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+  // Light/Dark Mode Toggle
+  const themeToggle = document.getElementById("themeToggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        });
+
+  </script>
+</body>
+</html>
