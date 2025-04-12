@@ -11,9 +11,11 @@
     margin-left: 24px;
     color: green;
 }
+
 .content
 {
     padding-right:0px;
+  
 }
 .home .content
 {
@@ -24,7 +26,7 @@ padding-top:0px;
 {
 font-size:70px;
 color: #0C0950;
-margin-top: 4px;
+margin-top: 2px;
 }
 .hbutton
 {
@@ -56,14 +58,16 @@ filter: drop-shadow(10px 10px 30px #e28605);
 {
     margin:1px;
 }
-.hradrtc
-{
-    margin-top: 2px;
-    padding-bottom: 19px;
-}
+
 .text-lg h6
 {
-    padding-bottom: 4px;
+    padding-bottom:1px;
+
+}
+.text-lg
+{
+  margin-top: 1px;
+
 }
 .image
 {
@@ -118,11 +122,12 @@ padding-left:7px;
     justify-content: space-around;
     padding: 20px;
 }
-  h1
+ .head1
 {
     color: #0C0950;
     margin: 10px;
     font-size:30px;
+
 }
 h4
 {
@@ -332,6 +337,11 @@ button
 }
 
   /*dark mode*/
+  .dark-mode
+  {
+    background-color: black;
+    color: white;
+  }
   .dark-mode .navbar
   {
     background-color: black;
@@ -343,6 +353,16 @@ button
     color: white;
   }
   .dark-mode .hradrtc
+  {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode .menu-item
+  {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode .py
   {
     background-color: black;
     color: white;
@@ -408,6 +428,7 @@ button
   {
     background-color: black;
     color: white;
+  
   }
   .dark-mode .text-lg
   {
@@ -419,3 +440,40 @@ button
     background-color: black;
     color: white;
   }
+  .dark-mode .row
+  {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode .slideshow-container
+  {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode .onlineapt
+  {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode hr
+  {
+    background-color: black;
+    height: 30px;
+    margin: 0px;
+  }
+  body {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    font-size: 25px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.footer-container
+{
+  width: 100%;
+  height: 400px;
+}
